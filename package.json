@@ -4,7 +4,11 @@
   "description": "Gulp Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "author": "Viktoriia Bekirova",
   "license": "ISC",
@@ -18,7 +22,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^5.0.3",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.1.0",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^6.0.0"
   },
